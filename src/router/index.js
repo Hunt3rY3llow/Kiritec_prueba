@@ -1,17 +1,24 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../components/HelloWorld.vue'
-import AboutView from '../components/About.vue'
+
+import Login from '../components/LoginFirebase.vue'
+import Register from '../components/RegisterForm.vue'
+import Dashboard from '../components/DashboardPokedex.vue'
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: Login
   },
-  {
-    path: '/about',
-    name: 'about',
-    component: AboutView
-  }
+   {
+    path: '/Register',
+    name: 'register',
+    component: Register
+  },
+   {
+    path: '/Dashboard',
+    name: 'dashboard',
+    component: Dashboard
+  },
 ]
 
 const router = createRouter({
